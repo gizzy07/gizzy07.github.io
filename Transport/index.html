@@ -1,0 +1,115 @@
+<html>
+
+<head>
+
+<title>GIZZYORAMA</title>
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+<script type="text/javascript">
+
+$("#slideshow > div:gt(0)").hide();
+
+setInterval(function() { 
+  $('#slideshow > div:first')
+    .fadeOut(900)
+    .next()
+    .fadeIn(900)
+    .end()
+    .appendTo('#slideshow');
+},  3000);
+
+</script>
+
+</head>
+
+<body>
+
+
+
+
+<!-- <ul> -->
+  <!-- <li><a href="trams.html">Trams</a></li> -->
+  <!-- <li><a href="trains.html">Trains</a></li> -->
+  <!-- <li><a href="planes.html">Planes</a></li> -->
+  <!-- <li><a href="index.html">Home</a></li> -->
+<!-- </ul> -->
+
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <div class="dropdown">
+  <a href="planes.html">Planes</a>
+  <div class="dropdown-content">
+    <a href="#">Boeing </a>
+    <a href="#">Airbus</a>
+    <a href="#">Embraer</a>
+	<a href="#">Bombardier</a>
+  </div>
+  </div>
+  <a href="trams.html">Trams</a>
+    <div class="dropdown">
+  <a  id="train">Trains</a>
+  
+    <div class="dropdown-content">
+    <a href="rpsi.html">RPSI</a>
+    <a href="irish-rail.html">Iarnród Éireann</a>
+	</div>
+  </div>
+</div>
+
+<footer>
+  <p>&copy; Andrew Niall Hannon 2019</p>
+ 
+</footer>
+
+<div>
+<div id="slideshow">
+   <div>
+     <img src="rpsi4 at connolly.jpg">
+   </div>
+   <div>
+     <img src="rpsi85 at lisburn.jpg">
+   </div>
+   <div>
+     <img src="RPSI131.jpg">
+   </div>
+   <div>
+     <img src="boeing 737-800.jpg">
+   </div>
+   <div>
+     <img src="luasred.jpg">
+   </div>
+   <div>
+     <img src="luasgreen.jpg">
+   </div>
+   <div>
+     <img src="787.jpg">
+   </div>
+   <div>
+     <img src="747.jpg">
+   </div>
+   <div>
+     <img src="757.jpg">
+   </div>
+      <div>
+     <img src="22000.jpg">
+   </div>
+   <div>
+     <img src="class29000.jpg">
+   </div>
+   <div>
+     <img src="201.jpg">
+   </div>
+   <div>
+   </div>
+</div>
+</div>
+ 
+</body>
+</html>
