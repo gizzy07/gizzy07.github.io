@@ -1,0 +1,34 @@
+<html>
+
+<head>
+
+<script type="text/javascript">
+const url ="https://lptcdojocounter.herokuapp.com/gizzy";
+
+fetch(url, {
+method: 'post'
+}).then((response) => {
+return response.json();
+}).then((data) => {
+});
+
+fetch(url).then((response) =>{
+return response.json()
+}).then((myJson) => {
+console.log(myJson);
+document.getElementById("counter").innerHTML ="Count: " + myJson.Count;
+});
+
+</script>
+
+</head>
+
+<body>
+
+<p id="counter">
+
+</p>
+
+</body>
+
+</html>
